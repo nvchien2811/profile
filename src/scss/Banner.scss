@@ -1,0 +1,88 @@
+.wrapperBanner{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #FFD460;
+    overflow: hidden;
+    .left{
+        width: 50%;
+        height: 200px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        .hello{
+            position: relative;
+            top:20px;
+            background-color: white;
+            width: 450px;
+            max-width: 100%;
+            // animation: fadeInHello 2s ease-in-out;
+            h2{
+                padding-inline: 5px;
+                padding-block: 10px;
+                font-size: 50px;
+                margin:0; 
+            }
+        }
+        .btn_readmore{
+            width: fit-content;
+            cursor: pointer;
+            padding-block: 10px;
+            padding-inline: 20px;
+            animation: textRun 2s ease-in-out;
+            span{
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+            &:hover{
+                background-color: black;
+                span{
+                    color: white;
+                }
+            }
+        }
+        h3{
+            display: inline-block !important;
+            font-weight: 400;
+            font-size: 35px;
+            word-spacing: 10px;
+            word-break: break-word;
+            animation: textRun 2s ease-in-out;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .wrapperBanner {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 10px;
+        .right{
+            order: 0;
+            width: 100%;
+        }
+        .left{
+            order: 1;
+            width: 100%;
+        }
+    }
+}
+
+@keyframes fadeInHello {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+
+@keyframes textRun {
+    from{
+        transform:translateY(500px)
+    }to{
+        transform:translateY(0px)
+    }
+}
