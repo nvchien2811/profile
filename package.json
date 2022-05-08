@@ -2,7 +2,7 @@
   "name": "profile_person",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nvchien2811.github.io/profile",
+  "homepage": "https://nvchien2811.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
